@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runbook Wizard - Presença Digital & SEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1',
+                        secondary: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .command-box {
+            font-family: 'Courier New', monospace;
+            transition: all 0.2s;
+        }
+        .command-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .step-card {
+            border-left: 4px solid #6366F1;
+        }
+        .copy-btn {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .command-box:hover .copy-btn {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-primary mb-4">Runbook Wizard <span class="text-secondary">Auto-Pilot</span></h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Sua bússola para automatizar processos de Presença Digital & SEO Local</p>
+            <div class="mt-8 p-4 bg-primary/10 rounded-lg inline-block">
+                <i data-feather="zap" class="inline text-primary"></i>
+                <span class="ml-2 font-medium">Fluxo otimizado em 5 etapas simples</span>
+            </div>
+        </header>
+
+        <!-- Steps Timeline -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Step 1 -->
+            <div class="flex flex-col md:flex-row mb-16">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:pr-8">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                    <h3 class="text-xl font-semibold mt-4 text-primary">Preparar Cliente</h3>
+                    <p class="text-gray-500 mt-2">5 minutos</p>
+                </div>
+                <div class="md:w-3/4 bg-white p-6 rounded-lg shadow-md step-card">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary mr-2 mt-1"></i>
+                            <span>Duplicar board do Trello → renomear para <span class="font-mono bg-gray-100 px-2 py-1 rounded">[CLIENTE] — Presença Digital & SEO Local</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary mr-2 mt-1"></i>
+                            <span>Criar pasta no Drive com estrutura padrão (<span class="font-mono bg-gray-100 px-2 py-1 rounded">/10_Posicionamento</span>, <span class="font-mono bg-gray-100 px-2 py-1 rounded">/20_Fundamentos</span>...)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary mr-2 mt-1"></i>
+                            <span>Guardar as 2 URLs do cliente no doc <span class="font-mono bg-gray-100 px-2 py-1 rounded">00_Links</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col md:flex-row mb-16">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:pr-8">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                    <h3 class="text-xl font-semibold mt-4 text-primary">Abrir GPT</h3>
+                    <p class="text-gray-500 mt-2">Configuração inicial</p>
+                </div>
+                <div class="md:w-3/4 bg-white p-6 rounded-lg shadow-md step-card">
+                    <div class="command-box bg-gray-800 text-gray-100 p-4 rounded-lg mb-4 relative">
+                        <div class="flex justify-between items-start">
+                            <code class="block whitespace-pre-wrap">Criar projeto novo e renomear para "[CLIENTE] — Presença Digital & SEO Local"</code>
+                            <button class="copy-btn bg-secondary text-white px-3 py-1 rounded text-sm ml-4">Copiar</button>
+                        </div>
+                    </div>
+                    <div class="command-box bg-gray-800 text-gray-100 p-4 rounded-lg mb-4 relative">
+                        <div class="flex justify-between items-start">
+                            <code class="block whitespace-pre-wrap">[FORM_START]
+...respostas do cliente...
+[FORM_END]</code>
+                            <button class="copy-btn bg-secondary text-white px-3 py-1 rounded text-sm ml-4">Copiar</button>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4"><i data-feather="info" class="inline mr-1"></i> Se já tiver, cole também área/serviços/provas (em texto)</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col md:flex-row mb-16">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:pr-8">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                    <h3 class="text-xl font-semibold mt-4 text-primary">Gerar Entregáveis</h3>
+                    <p class="text-gray-500 mt-2">Gate #1</p>
+                </div>
+                <div class="md:w-3/4 bg-white p-6 rounded-lg shadow-md step-card">
+                    <div class="command-box bg-gray-800 text-gray-100 p-4 rounded-lg mb-4 relative">
+                        <div class="flex justify-between items-start">
+                            <code class="block whitespace-pre-wrap">Responda: CONTINUAR</code>
+                            <button class="copy-btn bg-secondary text-white px-3 py-1 rounded text-sm ml-4">Copiar</button>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">O Gerente de projetos entrega:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                        <li>Declaração (≤200c)</li>
+                        <li>4 diferenciais</li>
+                        <li>3 CTAs</li>
+                        <li>Headline</li>
+                        <li>Bios GB/IG</li>
+                        <li>Title/meta</li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 flex items-center">
+                            <i data-feather="alert-triangle" class="mr-2"></i>
+                            Se vier FALTA: &lt;item&gt;, peça ao cliente e reenvie
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col md:flex-row mb-16">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:pr-8">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                    <h3 class="text-xl font-semibold mt-4 text-primary">Salvar e Anexar</h3>
+                    <p class="text-gray-500 mt-2">Organização</p>
+                </div>
+                <div class="md:w-3/4 bg-white p-6 rounded-lg shadow-md step-card">
+                    <h4 class="font-semibold text-gray-800 mb-3">Salvar no Drive:</h4>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i data-feather="file-text" class="text-primary mr-2 mt-1"></i>
+                            <span><span class="font-mono bg-gray-100 px-2 py-1 rounded">01_Declaracao_Posicionamento_v1.pdf</span> em <span class="font-mono bg-gray-100 px-2 py-1 rounded">/10_Posicionamento</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="file-text" class="text-primary mr-2 mt-1"></i>
+                            <span><span class="font-mono bg-gray-100 px-2 py-1 rounded">bios_v1.txt</span> (GB/IG)</span>
+                        </li>
+                    </ul>
+                    
+                    <h4 class="font-semibold text-gray-800 mb-3">No Trello (card T-01 | Posicionamento — [CLIENTE]):</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="paperclip" class="text-primary mr-2 mt-1"></i>
+                            <span>Anexar os dois arquivos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="tag" class="text-primary mr-2 mt-1"></i>
+                            <span>Label <span class="font-mono bg-gray-100 px-2 py-1 rounded">Validação Cliente</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="calendar" class="text-primary mr-2 mt-1"></i>
+                            <span>Due date +48h</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="list" class="text-primary mr-2 mt-1"></i>
+                            <span>Checklist GATE #1 (3 itens: representa? ajustar? aprovar?)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:pr-8">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">5</div>
+                    <h3 class="text-xl font-semibold mt-4 text-primary">QA com Cliente</h3>
+                    <p class="text-gray-500 mt-2">Validação</p>
+                </div>
+                <div class="md:w-3/4 bg-white p-6 rounded-lg shadow-md step-card">
+                    <div class="command-box bg-gray-800 text-gray-100 p-4 rounded-lg mb-4 relative">
+                        <div class="flex justify-between items-start">
+                            <code class="block whitespace-pre-wrap">Enviar a DM/Whats (modelo: 03_Gate1_QA_msg.txt) pedindo as 3 confirmações</code>
+                            <button class="copy-btn bg-secondary text-white px-3 py-1 rounded text-sm ml-4">Copiar</button>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">Recebeu ok? No hub do Gerente de projetos escreva:</p>
+                    <div class="command-box bg-gray-800 text-gray-100 p-4 rounded-lg mb-6 relative">
+                        <div class="flex justify-between items-start">
+                            <code class="block whitespace-pre-wrap">APROVAR GATE #1. INICIAR GATE #2 (Fundamentos)</code>
+                            <button class="copy-btn bg-secondary text-white px-3 py-1 rounded text-sm ml-4">Copiar</button>
+                        </div>
+                    </div>
+                    <div class="command-box bg-gray-800 text-gray-100 p-4 rounded-lg relative">
+                        <div class="flex justify-between items-start">
+                            <code class="block whitespace-pre-wrap">Depois mande CONTINUAR para gerar o pacote do Gate #2, e repita o ciclo</code>
+                            <button class="copy-btn bg-secondary text-white px-3 py-1 rounded text-sm ml-4">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Commands Section -->
+        <div class="max-w-4xl mx-auto mt-20">
+            <h2 class="text-2xl font-bold text-primary mb-6 text-center">Comandos Úteis</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-secondary">
+                    <h3 class="font-semibold text-lg mb-3 flex items-center">
+                        <i data-feather="command" class="text-secondary mr-2"></i>
+                        Comandos de Fluxo
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm mr-2">CONTINUAR</span>
+                            <span>→ gera o entregável do Gate atual</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm mr-2">APROVAR GATE #1</span>
+                            <span>→ libera avanço</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm mr-2">INICIAR GATE #2 (ou #3A, #3B)</span>
+                            <span>→ define o próximo Gate</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary">
+                    <h3 class="font-semibold text-lg mb-3 flex items-center">
+                        <i data-feather="alert-circle" class="text-primary mr-2"></i>
+                        Comandos de Controle
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm mr-2">PAUSAR</span>
+                            <span>→ quando faltar dado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm mr-2">RECAP GATE ATUAL</span>
+                            <span>→ o Gerente de projetos lista o que já foi feito e o que falta</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Checklist Section -->
+        <div class="max-w-4xl mx-auto mt-16 bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+            <h2 class="text-2xl font-bold text-primary mb-6 text-center">Checklist Rápido (por cliente)</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span>Board do Trello duplicado e renomeado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span>Pasta do Drive criada (subpastas padrão)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span>Projeto GATED criado e renomeado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span>Formulário colado <span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm">[FORM_START]...[FORM_END]</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span><span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm">CONTINUAR</span> → entregáveis do Gate #1 gerados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span>PDF + TXT salvos e anexados ao card T-01</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span>QA enviado (mensagem 3 perguntas)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-square" class="text-secondary mr-2 mt-1"></i>
+                            <span><span class="font-mono bg-gray-100 px-2 py-1 rounded text-sm">APROVAR GATE #1</span> (após ok do cliente)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-20 text-center text-gray-500 text-sm">
+            <p>Runbook Wizard - Fluxo otimizado para Presença Digital & SEO Local</p>
+            <p class="mt-2">Pronto—com isso você já roda o próximo cliente do zero, sem se perder e sem "pular" etapas.</p>
+        </footer>
+    </div>
+
+    <script>
+        feather.replace();
+        
+        // Copy functionality
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const code = this.parentElement.querySelector('code').textContent;
+                navigator.clipboard.writeText(code.trim());
+                
+                const originalText = this.textContent;
+                this.textContent = 'Copiado!';
+                this.classList.add('bg-green-500');
+                
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.classList.remove('bg-green-500');
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
